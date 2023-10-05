@@ -1,0 +1,96 @@
+body {
+  font-family: Tahoma;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background: url("BgImage.avif") no-repeat center center fixed;
+  background-size: cover;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Add padding to container elements */
+.container {
+  padding: 20px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.382);
+  box-shadow: 2px 1px 21px -9px rgba(0, 0, 0, 0.38);
+}
+
+h1 {
+  text-align: center;
+}
+
+/* Full-width input fields */
+input[type="text"],
+input[type="email"],
+input[type="password"] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  border-radius: 10px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+select {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f7f7f7;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+select:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.error {
+  color: red;
+  background-color: rgb(255, 212, 212);
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 5px;
+  display: none;
+}
+
+/* Set a style for all buttons */
+button {
+  background-color: #2600ff;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+  opacity: 0.9;
+  font-size: 20px;
+  font-family: Montserrat, Arial, Helvetica, sans-serif;
+  border-radius: 10px;
+}
+
+button:hover {
+  opacity: 1;
+}
+
+/* Change styles for signup button on smaller screens */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 90%;
+  }
+}

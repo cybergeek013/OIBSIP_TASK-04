@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Authentication System</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <form id="login-form" onsubmit="signin(event)">
+      <div class="container">
+        <h1>Sign In</h1>
+        <label for="email"><b>Email</b></label>
+        <input
+          type="email"
+          id="login-email"
+          placeholder="example@gmail.com"
+          name="email"
+          required
+        />
+
+        <label for="psw"><b>Password</b></label>
+        <input
+          type="password"
+          id="login-password"
+          placeholder="Enter Password"
+          name="psw"
+          required
+        />
+        <p id="error-message" class="error"></p>
+
+        <div class="clearfix">
+          <button type="submit" class="btn">Sign In</button>
+        </div>
+
+        <h4>New User ? <a href="./index.html">Sign Up</a></h4>
+      </div>
+    </form>
+    <script src="https://www.gstatic.com/firebasejs/10.4.0/firebase-auth.js"></script>
+    <script type="module" src="login.js"></script>
+  </body>
+</html>
